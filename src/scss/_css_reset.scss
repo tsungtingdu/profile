@@ -29,7 +29,9 @@ li {
 
 a,
 a:hover,
-a:focus {
+a:focus,
+a:checked,
+a:visited {
   text-decoration: none;
 }
 

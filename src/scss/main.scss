@@ -5,17 +5,32 @@
 //  color scheme
 $temp_color: #2e8b57;
 $white: #ffffff;
+$black:#000;
 $dark_blue: #303C6C;
 $mid_blue:#B4DFE5;
 $light_blue:#D2FDFF;
 $light_orange:#F4976C;
 $light_yellow:#FBE8A6;
 
+a:visited {
+  color: inherit;
+}
+
 //  main style
-.section-title h1 {
-  font-size: 48px;
-  font-weight: 700;
+
+.section-title {
   color: $dark_blue;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 12px 0;
+  }
 }
 
 body {
@@ -170,7 +185,6 @@ body {
 
 .project {
   width: 100%;
-  background-color: rgba($color: $light_yellow, $alpha: 0.5);
 
   &__container {
     width: 100%;
@@ -180,12 +194,64 @@ body {
       flex-wrap: wrap;
 
       .case {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
         flex: 0 0 400px;
         width: 400px;
         height: 250px;
-        background-color: $light_orange;
-        border-radius: 5px;
+        background-color: rgba($color: $dark_blue, $alpha:0.75);
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px 0px $dark_blue;
         margin: 15px;
+
+        img {
+          width: 100%;
+          border-radius: 10px;
+          position: relative;
+          object-fit: cover;
+          transition: transform .2s ease-in-out;
+        }
+
+        p {
+          width: 100%;
+          position: absolute;
+          font-size: 36px;
+          font-weight: 700;
+          color: $white;
+          top: 50%;
+          transform: translateY(-50%)
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2.5rem;
+          bottom: 2.5rem;
+          left: 2.5rem;
+          right: 2.5rem;
+          border-top: 2px solid $light_yellow;
+          border-bottom: 2px solid $light_yellow;
+          z-index: 100;
+          transform: scale(0, 1);
+          transition: transform 0.4s ease-out;
+        }
+
+        &:hover {
+          p {
+            display: block;
+            z-index: 100;
+          }
+
+          img {
+            opacity: 0.15;
+            transform: scale(1.25);
+          }
+
+          &::after {
+            transform: scale(1.05, 1);
+          }
+        }
 
         @media screen and (max-width: 992px) {
           flex: 0 0 500px;
@@ -227,6 +293,7 @@ body {
 
         p {
           position: absolute;
+          width: 100%;
           font-size: 36px;
           font-weight: 700;
           color: $white;
