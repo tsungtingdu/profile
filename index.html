@@ -6,10 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TD's profile</title>
   <link rel="stylesheet" href="dist/main.css">
+  <script src="https://kit.fontawesome.com/4bcbc3a3da.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <h1>Hello world!</h1>
+  <nav class="navbar d-flex justify-content-between align-items-center">
+    <div class="logo ml-8">TD</div>
+    <div class="menu mr-8">
+      <input type="checkbox" class="navbar-toggle d-none" id="navbar-toggle" />
+      <div class="menu__list text-center ">
+        <ul>
+          <li><a href="#section-home" class="menu__list__link">HOME</a></li>
+          <li><a href="#section-about" class="menu__list__link">ABOUT</a></li>
+          <li><a href="#section-project" class="menu__list__link">PROJECT</a></li>
+          <li><a href="#section-blog" class="menu__list__link">BLOG</a></li>
+        </ul>
+      </div>
+      <label for="navbar-toggle"
+        class="menu__button d-flex justify-content-center align-items-center navbar-toggle-label"><i
+          class="fas fa-bars"></i>
+      </label>
+    </div>
+  </nav>
+  <section class="home" id="section-home">HOME</section>
+  <section class="about" id="section-about">ABOUT</section>
+  <section class="project" id="section-proejct">PROJECT</section>
+  <section class="blog" id="section-blog">BLOG</section>
   <script src="dist/bundle.js"></script>
 </body>
 
