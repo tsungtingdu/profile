@@ -11,7 +11,9 @@
 
 <body>
   <nav class="navbar d-flex justify-content-between align-items-center">
-    <div class="logo ml-8">TD</div>
+    <div class="logo ml-8">
+      <a href="#section-home">TD</a>
+    </div>
     <div class="menu mr-8">
       <input type="checkbox" class="navbar-toggle d-none" id="navbar-toggle" />
       <div class="menu__list text-center ">
@@ -36,44 +38,57 @@
       </div>
     </div>
   </section>
-  <section class="about pt-8" id="section-about">
+  <section class="about p-8 mb-4" id="section-about">
     <div class="about__container">
       <div class="about__container__title text-center section-title">
         <h1>About me</h1>
       </div>
-      <div class="about__container__paragraph p-4">
-        <p class="p-4">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent
-          a nisl et
-          sem
-          suscipitiaculis. Integer dictum dui et nunc volutpat, ut pulvinar elit interdum. Nunc gravida ex id turpis
-          condimentum
-          mattis.</p>
-        <p class="p-4">Cras aliquet mauris neque, non tempus elit ornare non. Sed pharetra dui lacus, pellentesque
-          elementum ipsum
-          pellentesqueac. Sed eget viverra tellus. Maecenas et mattis ante. Aliquam vel justo ut est ultrices
-          consectetur sit amet
-          et
-          lacus.</p>
-        <p class="p-4">Vestibulum nec nisl felis. Vivamus sit amet placerat ligula. Nulla accumsan eget mi eget rutrum.
-          Morbi
-          fermentum
-          rutrumurna, sollicitudin sodales nisl.</p>
+      <div class="about__container__paragraph p-4 text-center">
+        <p class="p-4 ">
+          <b>Software developer</b>,
+          <b>Learner</b>,
+          <b>Problem solver</b>,
+          <b>Baseball player</b>, and
+          <b>Cat lover</b></p>
+        <p class="p-4">I am passionate about creating changes through technology. Self-taught and trained in software
+          development knowledge and skills, I help the team enhance efficiency and productivity by building several
+          software applications.</p>
+        <p class="p-4">I've been working in a startup for more than six years. I thrive in helping my team and partners
+          achieve business goals in a fast-changing and challenging startup environment
+          through my abilities in problem-solving and project management.</p>
+        <p class="p-4 text-center">I'm from Taiwan now living in Singapore with my wife. Find more via the links
+          below: </p>
       </div>
       <div class="about__container__linklist d-flex justify-content-center p-4">
-        <div class="about__container__linklist__link">
-          <i class="fab fa-github-square"></i>
+        <div class="about__container__linklist__link text-center">
+          <a href="https://github.com/tsungtingdu" target="_blank">
+            <i class="fab fa-github-square"></i>
+            <p class="d-none">Github</p>
+          </a>
         </div>
-        <div class="about__container__linklist__link">
-          <i class="fab fa-medium"></i>
+        <div class="about__container__linklist__link text-center">
+          <a href="https://medium.com/tds-note" target="_blank">
+            <i class="fab fa-medium"></i>
+            <p class="d-none">Medium</p>
+          </a>
         </div>
-        <div class="about__container__linklist__link">
-          <i class="fab fa-linkedin"></i>
+        <div class="about__container__linklist__link text-center ">
+          <a href="https://www.linkedin.com/in/tsung-ting-tu/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            <p class="d-none">LinkedIn</p>
+          </a>
         </div>
-        <div class="about__container__linklist__link">
-          <i class="far fa-address-card"></i>
+        <div class="about__container__linklist__link text-center">
+          <a href="https://www.cakeresume.com/tsung-ting-tu" target="_blank">
+            <i class="far fa-address-card"></i>
+            <p class="d-none">Resume</p>
+          </a>
         </div>
-        <div class="about__container__linklist__link">
-          <i class="fas fa-chalkboard"></i>
+        <div class="about__container__linklist__link text-center">
+          <a href="https://lighthouse.alphacamp.co/users/3247/ta_profile" target="_blank">
+            <i class="fas fa-chalkboard"></i>
+            <p class="d-none">Teaching</p>
+          </a>
         </div>
       </div>
     </div>
@@ -99,12 +114,37 @@
         <h1>Blog</h1>
       </div>
       <div class="blog__container__article d-flex justify-content-center p-8 ">
-        <div class="article"></div>
-        <div class="article"></div>
-        <div class="article"></div>
-        <div class="article"></div>
-        <div class="article"></div>
-        <div class="article"></div>
+        <a class="article" href="https://medium.com/tds-note/how-array-prototype-sort-works-in-v8-d69ff0a7b663"
+          target="_blank">
+          <p class="d-none text-center p-4">How Array.prototype.sort() works in V8 engine?</p>
+          <img src="./src/pic/article1.jpeg" alt="" />
+        </a>
+        <a class="article" href="https://medium.com/tds-note/how-failure-message-works-in-passport-js-512e453af8a3"
+          target="_blank">
+          <p class="d-none text-center p-4">How failure message works in Passport.js</p>
+          <img src="./src/pic/article2.jpeg" alt="" />
+        </a>
+        <a class="article" href="https://medium.com/tds-note/read-the-source-code-of-connect-flash-9e51691decda"
+          target="_blank">
+          <p class="d-none text-center p-4">Read the source code of connect-flash</p>
+          <img src="./src/pic/article3.jpeg" alt="" />
+        </a>
+        <a class="article" href="https://medium.com/tds-note/node-js-mongodb-with-docker-1-464984942c49"
+          target="_blank">
+          <p class="d-none text-center p-4">Node.js & MongoDB with Docker (1)</p>
+          <img src="./src/pic/article4.jpeg" alt="" />
+        </a>
+        <a class="article" href="https://medium.com/tds-note/how-not-to-use-body-parser-b93241ba2d6a" target="_blank">
+          <p class="d-none text-center p-4">How not to use body-parser</p>
+          <img src="./src/pic/article5.jpeg" alt="" />
+        </a>
+        <a class="article"
+          href="https://medium.com/tds-note/callback-%E5%9C%A8-evenlistener-%E7%9A%84%E9%81%8B%E4%BD%9C-7eca3e014043"
+          target="_blank">
+          <p class="d-none text-center p-4">How callback works in EventListener</p>
+          <img src="./src/pic/article6.jpeg" alt="" />
+        </a>
+
       </div>
     </div>
   </section>
