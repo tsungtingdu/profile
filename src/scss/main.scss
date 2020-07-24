@@ -256,7 +256,8 @@ body {
         }
 
         @media screen and (max-width: 992px) {
-          flex: 0 0 500px;
+          flex: 0 0 80vw;
+          height: 53vw;
         }
       }
     }
@@ -279,6 +280,13 @@ body {
       box-shadow: 0 0 5px $dark_blue;
       backdrop-filter: blur(10px);
       z-index: 600;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      @media screen and (max-width: 992px) {
+        width: 80vw;
+        height: 80vh;
+      }
 
       &::before {
         content: "";
@@ -297,11 +305,23 @@ body {
         .close__icon {
           display: flex;
           flex-flow: row-reverse;
+          cursor: pointer;
 
           i {
             font-size: 24px;
             line-height: 36px;
             color: $dark_blue;
+
+            &:hover {
+              transform: scale(1.5);
+            }
+          }
+
+          p {
+            width: 100%;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
 
             &:hover {
               transform: scale(1.5);
@@ -350,12 +370,22 @@ body {
             cursor: pointer;
 
             a {
-              i {
-                color: $dark_blue;
+              margin-right: 15px;
+              height: 35px;
+              width: 35px;
+              line-height: 35px;
+              vertical-align: middle;
 
-                &:hover {
-                  color: $light_orange
-                }
+              i {
+                color: $black;
+              }
+
+              img {
+                border-radius: 50%;
+              }
+
+              &:hover {
+                transform: scale(1.25);
               }
             }
           }
@@ -436,7 +466,8 @@ body {
         }
 
         @media screen and (max-width: 992px) {
-          flex: 0 0 500px;
+          flex: 0 0 80vw;
+          height: 53vw;
         }
       }
     }

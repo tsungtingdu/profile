@@ -20,8 +20,8 @@
         <ul>
           <li><a href="#section-home" class="menu__list__link">HOME</a></li>
           <li><a href="#section-about" class="menu__list__link">ABOUT</a></li>
-          <li><a href="#section-project" class="menu__list__link">PROJECT</a></li>
-          <li><a href="#section-blog" class="menu__list__link">BLOG</a></li>
+          <li><a href="#section-project" class="menu__list__link">PROJECTS</a></li>
+          <li><a href="#section-blog" class="menu__list__link">ARTICLES</a></li>
         </ul>
       </div>
       <label for="navbar-toggle"
@@ -34,7 +34,7 @@
     <div class="home__container">
       <img class="home__container__img" src="./src/pic/fly.jpg" alt="fly high">
       <div class="home__container__text">
-        Hi! I'm TD (Tim)
+        Hi! I'm <span class="home__container__name">Tim</span>
       </div>
     </div>
   </section>
@@ -96,8 +96,8 @@
   <section class="project pt-8" id="section-project">
     <div class="project__container">
       <div class="project__container__title text-center section-title ">
-        <h1>Project</h1>
-        <p>Projects I built</p>
+        <h1>Projects</h1>
+        <p>Projects I built. Click in and find out more!</p>
       </div>
       <div class="project__container__showcase d-flex justify-content-center p-8">
         <div class="case" data-id="modal__item__1">
@@ -155,8 +155,15 @@
               </ul>
             </div>
             <div class="project__details__link d-flex">
-              <a href="#"><i class="fab fa-github-square"></i></a>
+              <a href="https://github.com/tsungtingdu/url_shortener_docker" target="_blank"><i
+                  class="fab fa-github-square"></i></a>
+              <a href="http://www.td.coffee/" target="_blank"><i class="fas fa-globe-americas"></i></a>
+              <a href="http://www.td.coffee/api-doc/" target="_blank"><img src="./src/pic/swagger.png" alt=""></i></a>
             </div>
+
+          </div>
+          <div class="close__icon mt-8">
+            <p>back</p>
           </div>
         </div>
       </div>
@@ -165,8 +172,8 @@
   <section class="blog pt-8" id="section-blog">
     <div class="blog__container">
       <div class="blog__container__title text-center section-title ">
-        <h1>Blog</h1>
-        <p>Tech articles I wrote and shared</p>
+        <h1>Articles</h1>
+        <p>Some of tech articles I wrote and shared on Medium. Clink in and find out more! </p>
       </div>
       <div class="blog__container__article d-flex justify-content-center p-8 ">
         <a class="article" href="https://medium.com/tds-note/how-array-prototype-sort-works-in-v8-d69ff0a7b663"
