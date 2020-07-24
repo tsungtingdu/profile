@@ -2,11 +2,12 @@
 
 This is my profile/portfolio page built with HTML, CSS, JavaScript, Sass/SCSS, and RWD design. You can find more about my projects and articles in this [page](https://tsungtingdu.github.io/profile/#section-about)
 
-
-Demo: 
-![demo](demo.gif)
-
 ***
+### Demo
+
+![demo](demo.gif)
+***
+
 ### Authors
 [tsungtingdu](https://github.com/tsungtingdu) (Tim)
 
