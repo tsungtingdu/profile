@@ -1,6 +1,6 @@
 # Profile page
 
-This is my profile/portfolio page built with HTML, CSS, JavaScript, Sass/SCSS, and RWD design. You can find more about my projects and articles in this [page](https://tsungtingdu.github.io/profile/#section-about)
+This is my profile/portfolio page built with HTML, CSS, JavaScript, Sass/SCSS, and RWD design. You can find more about my projects and articles in this [page](https://tsungtingdu.github.io/profile).
 
 ***
 ### Demo
@@ -15,5 +15,6 @@ Self-taught and trained in software development knowledge and skills, I am passi
 
 You can find more about me here:
 * [Medium](https://medium.com/tds-note)
+* [Profile](https://tsungtingdu.github.io/profile)
 * [LinkedIn](https://www.linkedin.com/in/tsung-ting-tu/)
 * [Teaching Assistant at ALPHA Camp](https://lighthouse.alphacamp.co/users/3247/ta_profile)
