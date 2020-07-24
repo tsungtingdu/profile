@@ -150,6 +150,9 @@ body {
 
   &__container {
     &__paragraph {
+      width: 80%;
+      margin: 0 auto;
+
       p {
         font-size: 28px;
         font-weight: 400;
