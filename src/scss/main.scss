@@ -133,12 +133,28 @@ body {
 
     &__text {
       position: absolute;
-      top: 40%;
+      width: 60%;
+      top: 45%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: $white;
       font-size: 5rem;
       font-weight: 700;
+
+      &__name {
+
+        span {
+          opacity: 0;
+          transition: all 0.5s ease-in-out 0.25s;
+          transform: translateY(-30px);
+          display: inline-block;
+        }
+
+        span.fade {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
 
       @media screen and (max-width: 992px) {
         font-size: 3rem;
@@ -146,6 +162,10 @@ body {
 
       @media screen and (max-width: 768px) {
         font-size: 2.5rem;
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: 2rem;
       }
     }
   }
@@ -156,12 +176,24 @@ body {
 
   &__container {
     &__paragraph {
-      width: 80%;
+      width: 95%;
       margin: 0 auto;
 
       p {
         font-size: 28px;
         font-weight: 400;
+
+        @media screen and (max-width: 992px) {
+          font-size: 24px;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: 18px;
+        }
       }
     }
 

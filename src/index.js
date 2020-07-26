@@ -49,3 +49,39 @@ const closeAllModal = e => {
 }
 
 modelLayer.addEventListener('click', closeAllModal)
+
+// title animation
+//const strText = text.textContent;
+const strText = ['Tim', 'TD', 'Developer', 'Learner', 'Engineer']
+let index = 0
+
+// show name first when page loaded
+changeName()
+// create animation
+setInterval(changeName, 2500)
+
+function changeName() {
+  const text = document.querySelector('.home__container__text__name')
+  const splitText = strText[index].split("")
+  text.textContent = ""
+
+  // create HTML elements
+  for (let i = 0; i < splitText.length; i++) {
+    text.innerHTML += `<span>${splitText[i]}</span>`
+  }
+  let char = 0;
+  let timer = setInterval(onTick, 100)
+
+  // create tick
+  function onTick() {
+    const span = text.querySelectorAll('span')[char]
+    span.classList.add('fade')
+    char++
+    if (char === splitText.length) {
+      clearInterval(timer)
+      timer = null
+      index = (index == strText.length - 1) ? 0 : index + 1
+      return
+    }
+  }
+}
