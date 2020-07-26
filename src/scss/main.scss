@@ -83,7 +83,8 @@ body {
         line-height: 40px;
         color: $dark_blue;
         opacity: 0;
-        transition: opacity 0.2s ease-in-out 0s;
+        transform: scale(0, 0);
+        transition: opacity 0.5s ease-in-out 0s, transform 0.5 linear;
       }
 
       &::before {
@@ -105,6 +106,7 @@ body {
     .navbar-toggle:checked {
       +.menu__list ul li a {
         opacity: 1;
+        transform: scale(1, 1);
       }
 
       +.menu__list::before {
