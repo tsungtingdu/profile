@@ -16,12 +16,14 @@ const modelLayer = document.querySelector('.modal__layer')
 modelLayer.classList.add('d-none')
 
 // open modal
+const html = document.querySelector('html')
 const projects = document.querySelectorAll('.case')
 const openModal = e => {
   let id = e.target.dataset.id
   const modal = document.querySelector(`#${id}`)
   modal.classList.remove('d-none')
   modelLayer.classList.remove('d-none')
+  html.setAttribute("style", "overflow: hidden;")
 }
 
 projects.forEach(i => {
@@ -35,6 +37,8 @@ const closeModal = e => {
   const modal = e.target.parentNode.parentNode.parentNode
   modal.classList.add('d-none')
   modelLayer.classList.add('d-none')
+  html.removeAttribute("style")
+  html.setAttribute("style", "overflow: scroll;")
 }
 
 closeIcon.forEach(i => {
