@@ -50,6 +50,7 @@ const closeAllModal = e => {
   const modals = document.querySelectorAll('.modal__item')
   modals.forEach(i => i.classList.add('d-none'))
   modelLayer.classList.add('d-none')
+  menuToggle.checked = false
 }
 
 modelLayer.addEventListener('click', closeAllModal)
